@@ -1,0 +1,28 @@
+# data and model artifacts (rebuilt by src/train.py)
+data/*
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
+models/*.joblib
+models/*.json
+
+# company documents (kept locally, not shared if the repo is pushed)
+docs/*.pdf
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# local Claude Code tooling
+.claude/
+
+# local only: personal notes, Claude Code instructions, slides
+prep/
+CLAUDE.md
+presentation/
