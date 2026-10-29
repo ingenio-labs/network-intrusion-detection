@@ -1,0 +1,12 @@
+{
+  "avg_ipt": 0.0,
+  "bytes_in": 8,
+  "bytes_out": 8,
+  "entropy": 2.75,
+  "num_pkts_out": 1,
+  "num_pkts_in": 1,
+  "total_entropy": 43.999996,
+  "duration": 6.2e-05,
+  "proto": 1,
+  "dest_port": 0
+}

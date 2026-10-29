@@ -1,0 +1,20 @@
+# Runs the API tests on every push and pull request. The tests build a tiny model in memory, so they need neither
+# the dataset nor a trained model (both stay out of git). The Docker image is not built here, because the trained
+# model is not in git either.
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest -q

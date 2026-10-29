@@ -1,0 +1,18 @@
+# Pinned so training and serving give the same results on any machine. Tested with Python 3.12.
+
+# data + model
+pandas==3.1.0
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+
+# API
+fastapi==0.161.0
+uvicorn==0.54.0
+pydantic==2.14.1
+
+# tests + notebook
+pytest==9.1.1
+httpx==0.28.1
+jupyter==1.1.1

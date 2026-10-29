@@ -1,0 +1,11 @@
+# Serving only (used by the Dockerfile): what the API needs to load the model and answer requests.
+# Same top-level versions as requirements.txt (scikit-learn, numpy, pandas, joblib...), so the saved model
+# loads as trained. A lock file would also pin sub-dependencies such as scipy (see docs/production.md).
+# No Jupyter, matplotlib or pytest: a smaller image with less to patch.
+fastapi==0.161.0
+uvicorn==0.54.0
+pydantic==2.14.1
+scikit-learn==1.9.1
+pandas==3.1.0
+numpy==2.5.4
+joblib==1.6.0

@@ -1,0 +1,15 @@
+# Keep the image small and free of data: only the serving code in src/, docs/examples/ and the trained model go in.
+.git/
+.venv/
+.claude/
+data/
+notebooks/
+reports/
+tests/
+src/train.py
+docs/*.pdf
+models/*
+!models/model.joblib
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/.DS_Store
